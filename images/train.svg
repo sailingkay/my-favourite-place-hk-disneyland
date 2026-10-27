@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" aria-label="Cartoon theme park train 卡通樂園小火車">
+  <title>Cartoon theme park train</title>
+  <defs>
+    <linearGradient id="tsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bfe4ff"/>
+      <stop offset="100%" stop-color="#eaf6ff"/>
+    </linearGradient>
+    <linearGradient id="tground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6fc48f"/>
+      <stop offset="100%" stop-color="#3d8f61"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 天空同雲 Sky and clouds -->
+  <rect width="800" height="400" fill="url(#tsky)"/>
+  <g fill="#ffffff">
+    <circle cx="120" cy="70" r="26"/>
+    <circle cx="150" cy="62" r="32"/>
+    <circle cx="184" cy="72" r="24"/>
+    <circle cx="620" cy="56" r="22"/>
+    <circle cx="650" cy="50" r="28"/>
+    <circle cx="680" cy="58" r="20"/>
+  </g>
+
+  <!-- 太陽 Sun -->
+  <circle cx="720" cy="70" r="34" fill="#ffd166"/>
+
+  <!-- 草地 Ground and rails -->
+  <rect x="0" y="300" width="800" height="100" fill="url(#tground)"/>
+  <g fill="#8a6b4a">
+    <rect x="20" y="318" width="16" height="10"/>
+    <rect x="70" y="318" width="16" height="10"/>
+    <rect x="120" y="318" width="16" height="10"/>
+    <rect x="170" y="318" width="16" height="10"/>
+    <rect x="220" y="318" width="16" height="10"/>
+    <rect x="270" y="318" width="16" height="10"/>
+    <rect x="320" y="318" width="16" height="10"/>
+    <rect x="370" y="318" width="16" height="10"/>
+    <rect x="420" y="318" width="16" height="10"/>
+    <rect x="470" y="318" width="16" height="10"/>
+    <rect x="520" y="318" width="16" height="10"/>
+    <rect x="570" y="318" width="16" height="10"/>
+    <rect x="620" y="318" width="16" height="10"/>
+    <rect x="670" y="318" width="16" height="10"/>
+    <rect x="720" y="318" width="16" height="10"/>
+  </g>
+  <rect x="0" y="312" width="800" height="5" fill="#9aa3b2"/>
+  <rect x="0" y="321" width="800" height="5" fill="#9aa3b2"/>
+
+  <!-- 火車頭 Locomotive -->
+  <g>
+    <!-- 煙囪同煙 Chimney and smoke -->
+    <rect x="140" y="192" width="30" height="46" fill="#2b3a7a"/>
+    <rect x="132" y="186" width="46" height="12" rx="4" fill="#24306b"/>
+    <g fill="#ffffff">
+      <circle cx="152" cy="172" r="14"/>
+      <circle cx="136" cy="146" r="11"/>
+      <circle cx="156" cy="124" r="9"/>
+      <circle cx="142" cy="104" r="6"/>
+    </g>
+    <!-- 車身 Body -->
+    <rect x="120" y="238" width="200" height="60" rx="10" fill="#e6455f"/>
+    <rect x="120" y="238" width="200" height="16" rx="8" fill="#ffb703"/>
+    <!-- 駕駛室 Cab -->
+    <rect x="244" y="200" width="86" height="98" rx="8" fill="#c9344b"/>
+    <rect x="256" y="214" width="62" height="40" rx="6" fill="#bfe4ff"/>
+    <!-- 車頭前方 Front -->
+    <path d="M120,238 q-26,30 0,60 z" fill="#e6455f"/>
+    <!-- 車輪 Wheels -->
+    <circle cx="160" cy="300" r="22" fill="#24306b"/>
+    <circle cx="160" cy="300" r="9" fill="#9aa3b2"/>
+    <circle cx="226" cy="300" r="22" fill="#24306b"/>
+    <circle cx="226" cy="300" r="9" fill="#9aa3b2"/>
+    <circle cx="292" cy="300" r="18" fill="#24306b"/>
+    <circle cx="292" cy="300" r="7" fill="#9aa3b2"/>
+  </g>
+
+  <!-- 第一卡車廂 Carriage 1 -->
+  <g>
+    <rect x="350" y="240" width="170" height="58" rx="8" fill="#5aa9e6"/>
+    <rect x="344" y="228" width="182" height="14" rx="6" fill="#24306b"/>
+    <rect x="368" y="252" width="34" height="30" rx="6" fill="#eaf6ff"/>
+    <rect x="416" y="252" width="34" height="30" rx="6" fill="#eaf6ff"/>
+    <rect x="464" y="252" width="34" height="30" rx="6" fill="#eaf6ff"/>
+    <circle cx="384" cy="300" r="16" fill="#24306b"/>
+    <circle cx="484" cy="300" r="16" fill="#24306b"/>
+  </g>
+
+  <!-- 第二卡車廂 Carriage 2 -->
+  <g>
+    <rect x="540" y="240" width="170" height="58" rx="8" fill="#7c5cc4"/>
+    <rect x="534" y="228" width="182" height="14" rx="6" fill="#24306b"/>
+    <rect x="558" y="252" width="34" height="30" rx="6" fill="#eaf6ff"/>
+    <rect x="606" y="252" width="34" height="30" rx="6" fill="#eaf6ff"/>
+    <rect x="654" y="252" width="34" height="30" rx="6" fill="#eaf6ff"/>
+    <circle cx="574" cy="300" r="16" fill="#24306b"/>
+    <circle cx="674" cy="300" r="16" fill="#24306b"/>
+  </g>
+
+  <!-- 路旁小樹 Trees -->
+  <rect x="34" y="272" width="12" height="30" fill="#6b4a2b"/>
+  <circle cx="40" cy="262" r="24" fill="#2f8f5b"/>
+  <rect x="744" y="276" width="12" height="26" fill="#6b4a2b"/>
+  <circle cx="750" cy="266" r="20" fill="#2f8f5b"/>
+</svg>

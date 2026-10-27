@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" aria-label="Cartoon carousel with three horses 卡通旋轉木馬">
+  <title>Cartoon carousel with three horses</title>
+  <defs>
+    <linearGradient id="csky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b2a6e"/>
+      <stop offset="100%" stop-color="#8f9bff"/>
+    </linearGradient>
+
+    <!-- 一隻木馬的畫法（面向右）：先畫金屬桿，再畫馬身
+         One carousel horse, drawn once and copied three times with <use> -->
+    <g id="horse">
+      <!-- 貫穿木馬的金屬桿 the pole that goes through the horse -->
+      <line x1="0" y1="-118" x2="0" y2="58" stroke="#8a5e00" stroke-width="11" stroke-linecap="round"/>
+      <line x1="0" y1="-118" x2="0" y2="58" stroke="#ffd166" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="0" cy="-104" r="8" stroke="none" fill="#ffd166"/>
+      <!-- 後腿 hind legs -->
+      <g stroke-width="9" stroke-linecap="round">
+        <line x1="-24" y1="13" x2="-28" y2="44"/>
+        <line x1="-13" y1="15" x2="-15" y2="46"/>
+      </g>
+      <!-- 前腿：一隻伸直、一隻提起 front legs: one down, one lifted -->
+      <g stroke-width="9" stroke-linecap="round">
+        <line x1="22" y1="13" x2="25" y2="44"/>
+        <line x1="12" y1="10" x2="22" y2="-6"/>
+        <line x1="22" y1="-6" x2="14" y2="-16"/>
+      </g>
+      <!-- 身體 body -->
+      <ellipse cx="0" cy="0" rx="36" ry="19"/>
+      <!-- 頸 neck -->
+      <polygon points="20,-4 34,-30 48,-24 30,10"/>
+      <!-- 頭和嘴 head and muzzle -->
+      <ellipse cx="46" cy="-30" rx="15" ry="10" transform="rotate(-18 46 -30)"/>
+      <ellipse cx="61" cy="-23" rx="9" ry="6.5" transform="rotate(-18 61 -23)"/>
+      <!-- 耳 ear -->
+      <polygon points="38,-38 42,-51 51,-40"/>
+      <!-- 鬃毛 mane -->
+      <polygon points="36,-40 30,-32 24,-20 34,-24 44,-30 46,-38" fill="#5a4a8f" stroke="none"/>
+      <!-- 尾巴 tail -->
+      <path d="M-34,-8 q -16,6 -14,26" fill="none" stroke-width="9" stroke-linecap="round"/>
+      <!-- 眼 eye -->
+      <circle cx="47" cy="-31" r="2.4" stroke="none" fill="#24306b"/>
+    </g>
+  </defs>
+
+  <!-- 背景夜空 Background -->
+  <rect width="800" height="400" fill="url(#csky)"/>
+  <g fill="#fff8d0">
+    <circle cx="80" cy="60" r="2.5"/>
+    <circle cx="180" cy="40" r="2"/>
+    <circle cx="300" cy="70" r="2"/>
+    <circle cx="500" cy="46" r="2.5"/>
+    <circle cx="620" cy="76" r="2"/>
+    <circle cx="722" cy="50" r="2"/>
+  </g>
+  <ellipse cx="400" cy="358" rx="360" ry="34" fill="#4a5bd0" opacity="0.5"/>
+
+  <!-- 底座和平台 Base and platform（畫在木馬後面 behind the horses） -->
+  <ellipse cx="400" cy="340" rx="200" ry="30" fill="#c9bda6"/>
+  <rect x="250" y="300" width="300" height="42" fill="#f2e6c9"/>
+  <ellipse cx="400" cy="300" rx="150" ry="22" fill="#fff6dc"/>
+
+  <!-- 中央柱子 Centre pole -->
+  <rect x="390" y="130" width="20" height="172" fill="#d4a017"/>
+
+  <!-- 頂篷 Canopy（紅白相間 red and white stripes） -->
+  <polygon points="400,60 230,150 570,150" fill="#e6455f"/>
+  <polygon points="400,60 315,150 400,150" fill="#fff3d6"/>
+  <polygon points="400,60 485,150 570,150" fill="#fff3d6"/>
+  <g fill="#ffd166">
+    <circle cx="250" cy="152" r="7"/>
+    <circle cx="325" cy="152" r="7"/>
+    <circle cx="400" cy="152" r="7"/>
+    <circle cx="475" cy="152" r="7"/>
+    <circle cx="550" cy="152" r="7"/>
+  </g>
+
+  <!-- 頂旗 Flag on top -->
+  <line x1="400" y1="60" x2="400" y2="24" stroke="#f2e6c9" stroke-width="4"/>
+  <polygon points="400,24 440,34 400,44" fill="#5aa9e6"/>
+
+  <!-- 三隻木馬 Three carousel horses -->
+  <g transform="translate(285,250)" fill="#ffffff" stroke="#ffffff">
+    <use href="#horse"/>
+  </g>
+  <g transform="translate(400,250)" fill="#ffc2d6" stroke="#ffc2d6">
+    <use href="#horse"/>
+  </g>
+  <g transform="translate(515,250)" fill="#ffe08a" stroke="#ffe08a">
+    <use href="#horse"/>
+  </g>
+
+  <!-- 草地 Grass -->
+  <rect x="0" y="352" width="800" height="48" fill="#2f8f5b"/>
+</svg>

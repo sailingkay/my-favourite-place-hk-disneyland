@@ -1,0 +1,134 @@
+/* ==========================================================
+   style.css — 「我最鍾意嘅地方」網站共用樣式表
+   Shared style sheet for the "My Favourite Place" website
+
+   全站只用基本 CSS：顏色、字體、邊框、內距。
+   唔使用 JavaScript，唔會連上任何外部網站（完全離線都用得）。
+   ========================================================== */
+
+/* ---------- 1. 全站基本設定 Basic page settings ---------- */
+body {
+  font-family: "Noto Sans CJK TC", "PingFang TC", Arial, sans-serif;
+  background-color: #eef2ff;   /* 淺藍底淺藍 background */
+  color: #1c2547;              /* 深藍字 dark blue text */
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+/* ---------- 2. 頁首 Header ---------- */
+header {
+  background-color: #16265c;
+  color: #ffe08a;
+  text-align: center;
+  padding: 20px 12px 16px 12px;
+  border-bottom: 8px solid #7c5cc4;
+}
+
+/* 標題字 Heading levels（h1 最大，h6 最細） */
+h1 { font-size: 32px; margin: 6px 0 10px 0; }
+h2 { font-size: 24px; margin: 0 0 12px 0; }
+h3 { font-size: 20px; margin: 18px 0 8px 0; }
+h4 { font-size: 18px; margin: 14px 0 6px 0; }
+h5 { font-size: 16px; margin: 12px 0 6px 0; }
+h6 { font-size: 15px; margin: 10px 0 4px 0; }
+
+/* ---------- 3. 導覽列 Navigation bar ---------- */
+nav {
+  background-color: #7c5cc4;
+  text-align: center;
+  padding: 10px 8px;
+}
+
+nav a {
+  display: inline-block;        /* 橫排的「按鈕」 inline-block links */
+  color: #ffffff;
+  background-color: #16265c;
+  text-decoration: none;
+  padding: 6px 14px;
+  margin: 4px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+nav a:hover {
+  background-color: #ffe08a;
+  color: #16265c;
+}
+
+/* ---------- 4. 主要內容 Main content ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;               /* 內容居中 centred */
+  padding: 20px 16px;
+}
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #ccd6f4;
+  border-radius: 10px;
+  padding: 16px 22px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  color: #16265c;
+  border-left: 8px solid #ffb703;   /* 左邊金色橫條 gold bar */
+  padding-left: 10px;
+}
+
+h3 { color: #7c5cc4; }
+h4, h5 { color: #3d5aa8; }
+h6 { color: #6b7280; }
+
+/* ---------- 5. 圖片 Image ---------- */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 14px auto;
+  border: 3px solid #ccd6f4;
+  border-radius: 12px;
+}
+
+/* ---------- 6. 連結 Link ---------- */
+a { color: #7c5cc4; }
+a:hover { color: #e07b00; }
+
+/* ---------- 7. 表格 Table ---------- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px 0;
+}
+
+th, td {
+  border: 1px solid #b9c4e0;
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: #16265c;
+  color: #ffffff;
+}
+
+tr:nth-child(even) td {
+  background-color: #f4f7ff;   /* 隔行淺色 zebra stripes */
+}
+
+/* ---------- 8. 清單 List ---------- */
+ul, ol { padding-left: 24px; }
+li { margin-bottom: 8px; }
+
+/* ---------- 9. 頁尾 Footer ---------- */
+footer {
+  background-color: #16265c;
+  color: #ffe08a;
+  text-align: center;
+  padding: 16px 12px;
+  margin-top: 10px;
+}
+
+footer a { color: #ffe08a; }
